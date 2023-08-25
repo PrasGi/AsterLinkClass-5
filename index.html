@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./assets/img/apple-icon.png"
+    />
+    <title>Groupe Class Aster 21 5</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <link href="./assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/42d5adcbca.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="./assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link
+      id="pagestyle"
+      href="./assets/css/argon-dashboard.css?v=2.0.4"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="g-sidenav-show bg-gray-100">
+    <div class="min-height-300 bg-primary position-absolute w-100"></div>
+    <aside
+      class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4"
+      id="sidenav-main"
+    >
+      <div class="sidenav-header">
+        <i
+          class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+          aria-hidden="true"
+          id="iconSidenav"
+        ></i>
+        <a
+          class="navbar-brand m-0"
+          href="https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html"
+          target="_blank"
+        >
+          <img
+            src="./assets/img/logo-ct-dark.png"
+            class="navbar-brand-img h-100"
+            alt="main_logo"
+          />
+          <span class="ms-1 font-weight-bold">CLASS 21 5</span>
+        </a>
+      </div>
+      <hr class="horizontal dark mt-0" />
+      <div class="collapse navbar-collapse w-auto" id="sidenav-collapse-main">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">
+              <div
+                class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center"
+              >
+                <i class="ni ni-tv-2 text-primary text-sm opacity-10"></i>
+              </div>
+              <span class="nav-link-text ms-1">Dashboard Class</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <main class="main-content position-relative border-radius-lg">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-main navbar-expand-lg px-0 mx-4 shadow-none border-radius-xl"
+        id="navbarBlur"
+        data-scroll="false"
+      >
+        <div class="container-fluid py-1 px-3">
+          <nav aria-label="breadcrumb">
+            <ol
+              class="breadcrumb bg-transparent mb-0 pb-0 pt-1 px-0 me-sm-6 me-5"
+            >
+              <li class="breadcrumb-item text-sm">
+                <a class="opacity-5 text-white" href="javascript:;">Pages</a>
+              </li>
+              <li
+                class="breadcrumb-item text-sm text-white active"
+                aria-current="page"
+              >
+                Dashboard
+              </li>
+            </ol>
+            <h6 class="font-weight-bolder text-white mb-0">Dashboard</h6>
+          </nav>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <div class="container-fluid py-4">
+        <div class="row mt-4">
+          <div class="col-lg-12 mb-lg-0 mb-4">
+              <div class="table-responsive">
+                <!-- Generating tables using data -->
+                <div id="tables-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Core JS Files -->
+    <script src="./assets/js/core/popper.min.js"></script>
+    <script src="./assets/js/core/bootstrap.min.js"></script>
+    <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="./assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script>
+      var win = navigator.platform.indexOf("Win") > -1;
+      if (win && document.querySelector("#sidenav-scrollbar")) {
+        var options = {
+          damping: "0.5",
+        };
+        Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options);
+      }
+    </script>
+    <!-- Github buttons -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+    <!-- Control Center for Soft Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/argon-dashboard.min.js?v=2.0.4"></script>
+    <script>
+      const data = [
+        [
+          {
+            title: "Mobile Programming",
+            type: "A",
+            link: "https://chat.whatsapp.com/K1JsxPxz8F1IjFl1kuWn5P",
+          },
+
+          {
+            title: "Mobile Programming",
+            type: "B",
+            link: "https://chat.whatsapp.com/I84M4qjQO9IKFMQ8lhZhNY",
+          },
+
+          {
+            title: "Mobile Programming",
+            type: "C",
+            link: "https://chat.whatsapp.com/LIoDfzRMgT0GVvxFc14JFY",
+          },
+
+          {
+            title: "Mobile Programming",
+            type: "D",
+            link: "https://chat.whatsapp.com/G6CCCZy3ebL1hdDksKoQnv",
+          },
+
+          {
+            title: "Mobile Programming",
+            type: "E",
+            link: "https://chat.whatsapp.com/JnYfu7JAkVg37QunQe0Lik",
+          },
+
+          {
+            title: "Mobile Programming",
+            type: "F",
+            link: "https://chat.whatsapp.com/KPjqkVRcY9dAQES1fLepOf",
+          },
+        ],
+        [
+          {
+            title: "METPEN (Research Methodology)",
+            type: "A",
+            link: "https://chat.whatsapp.com/HPV2pz7HgyCFRyWUEg7raI",
+          },
+
+          {
+            title: "METPEN (Research Methodology)",
+            type: "B",
+            link: "https://chat.whatsapp.com/IM1KH6142LBCtSszGthSzp",
+          },
+
+          {
+            title: "METPEN (Research Methodology)",
+            type: "C",
+            link: "https://chat.whatsapp.com/IAJACBnzn9U7UEoFdjKgOo",
+          },
+
+          {
+            title: "METPEN (Research Methodology)",
+            type: "D",
+            link: "https://chat.whatsapp.com/FKrToUOz8MF965kw59gTB5",
+          },
+
+          {
+            title: "METPEN (Research Methodology)",
+            type: "E",
+            link: "https://chat.whatsapp.com/J5yfSRbl12eEq7qcabxLDK",
+          },
+
+          {
+            title: "METPEN (Research Methodology)",
+            type: "F",
+            link: "https://chat.whatsapp.com/FVyTn9hM0RgIyL6UOXbYc3",
+          },
+        ],
+        [
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "A",
+            link: "https://chat.whatsapp.com/EzikxsOHTWhFgJmyPf5Liw",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "B",
+            link: "https://chat.whatsapp.com/DNvnohRpjDB426OG45CxO5",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "C",
+            link: "https://chat.whatsapp.com/LYA7KqA9BAZ6hS9msnVAgY",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "D",
+            link: "https://chat.whatsapp.com/LSx3zrS062S0rLvh7rGqjw",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "E",
+            link: "https://chat.whatsapp.com/DzfRMmhX2y23YlrImlQ1YJ",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "F",
+            link: "https://chat.whatsapp.com/K4BKRalptFIFZLpffU6aFu",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "G",
+            link: "https://chat.whatsapp.com/LkRU1crsSwb8b7hXbXYXbz",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "H",
+            link: "https://chat.whatsapp.com/Kbdbqrnba8993pXgOkiTrO",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "I",
+            link: "https://chat.whatsapp.com/E4P3BiHF8HCCLZAadGD88E",
+          },
+
+          {
+            title: "Praktikum Mulmed & Game",
+            type: "J",
+            link: "https://chat.whatsapp.com/IuSSD3vqOR512T9RqJUf8k",
+          },
+        ],
+        [
+          {
+            title: "Sistem Operasi",
+            type: "A",
+            link: "https://chat.whatsapp.com/FR7utqLiIjS3nDFCD9AozU",
+          },
+
+          {
+            title: "Sistem Operasi",
+            type: "B",
+            link: "https://chat.whatsapp.com/FSS60aqACFP6AZY1fv7zNF",
+          },
+
+          {
+            title: "Sistem Operasi",
+            type: "C",
+            link: "https://chat.whatsapp.com/FQuX8ekO2RG7uwjO5TwXSd",
+          },
+
+          {
+            title: "Sistem Operasi",
+            type: "D",
+            link: "https://chat.whatsapp.com/CFuOVRAuGvXBOncAcY1mBl",
+          },
+
+          {
+            title: "Sistem Operasi",
+            type: "E",
+            link: "https://chat.whatsapp.com/KGUU3dxFInc1hnlb0ydFW1",
+          },
+
+          {
+            title: "Sistem Operasi",
+            type: "F",
+            link: "https://chat.whatsapp.com/ExunMYyDv6e9hefc1bggiy",
+          },
+        ],
+        [
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "A",
+            link: "https://chat.whatsapp.com/Gf5riT0VbCJCYFLh68BrFv",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "B",
+            link: "https://chat.whatsapp.com/EmbzohqyOyb5tL5wlkZcpQ",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "C",
+            link: "https://chat.whatsapp.com/I5hSjhGbgP3DRochpaFp8f",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "D",
+            link: "https://chat.whatsapp.com/FFiHV0QmT6K6TQ36AddlN6",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "E",
+            link: "https://chat.whatsapp.com/I974PgCoNsMDuecEwgsJ4f",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "F",
+            link: "https://chat.whatsapp.com/KrO0YNObPcf2buwQ1HUuoJ",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "G",
+            link: "https://chat.whatsapp.com/LfubaG0O6Ew2K2F5qocGlW",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "H",
+            link: "https://chat.whatsapp.com/FZpXwJfCVhEIHlLLesZKh7",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "I",
+            link: "https://chat.whatsapp.com/LcCXScFRsIm9bcCQfoTYZ2",
+          },
+
+          {
+            title: "Praktikum Pemrograman Mobile",
+            type: "J",
+            link: "https://chat.whatsapp.com/JqtiyxOogzV0lSi6XEM7uf",
+          },
+        ],
+        [
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "A",
+            link: "https://chat.whatsapp.com/I9CbqU1J4a6JTfgJvxd6hz",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "B",
+            link: "https://chat.whatsapp.com/EptBxwKYqEG0W00DUl5uHR",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "C",
+            link: "https://chat.whatsapp.com/IzLEkl3F4nt9LsXDGO7Kow",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "D",
+            link: "https://chat.whatsapp.com/CBiFsjh48rqC1kFx0XBlAT",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "E",
+            link: "https://chat.whatsapp.com/CIRBU9Oa0P1Hjx7PKEx4cH",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "F",
+            link: "https://chat.whatsapp.com/DiuA3Q6G4Ig0afeWwKGc3p",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "G",
+            link: "https://chat.whatsapp.com/BS63nteIBS60l01b5bMOvv",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "H",
+            link: "https://chat.whatsapp.com/FwG4pGrEGlW5EvHpxZcmhw",
+          },
+
+          {
+            title: "Praktikum Sistem Terdistribusi dan Keamanan",
+            type: "I",
+            link: "https://chat.whatsapp.com/FfHxP2tChoA3tQDl2dJNQG",
+          },
+        ],
+        [
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "A",
+            link: "https://chat.whatsapp.com/Lbqk1OYrDPV9JRQEGukIGq",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "B",
+            link: "https://chat.whatsapp.com/LiAMsh1c1wP6DKsY6nSav4",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "C",
+            link: "https://chat.whatsapp.com/J1kVGJGcyH0Kws22ochPzU",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "D",
+            link: "https://chat.whatsapp.com/Gfz4xRlub2k2jCVp7XQuDJ",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "E",
+            link: "https://chat.whatsapp.com/EksT1iRjeldHUIHQx9TXKs",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "F",
+            link: "https://chat.whatsapp.com/JpOmxC8VtwIG9TGZeFlQ8H",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "G",
+            link: "https://chat.whatsapp.com/ESVT7nhyEgK114XoWBcby7",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "H",
+            link: "https://chat.whatsapp.com/EOQOuJ2K1atDq7D8hKNpZK",
+          },
+
+          {
+            title: "Praktikum Sistem Informasi",
+            type: "I",
+            link: "https://chat.whatsapp.com/C7qzfvRWSm39auy7gTS2eN",
+          },
+        ],
+        [
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "A",
+            link: "https://chat.whatsapp.com/LA6kQjUzNdYDyjnnVscMoL",
+          },
+
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "B",
+            link: "https://chat.whatsapp.com/DYnb8cD9wLTHa5L0C7XsIv",
+          },
+
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "C",
+            link: "https://chat.whatsapp.com/BcvzQxuGSZxG6n5DarnlXj",
+          },
+
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "D",
+            link: "https://chat.whatsapp.com/IynsDzIsoMIFlafyAjPAi5",
+          },
+
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "E",
+            link: "https://chat.whatsapp.com/GdxjDVPSJD9GFBZYrKW1Pv",
+          },
+
+          {
+            title: "Sistem Terdistribusi Keamanan",
+            type: "F",
+            link: "https://chat.whatsapp.com/FSPJICzOh1s0za9SMBFRui",
+          },
+        ],
+        [
+          {
+            title: "SISTEM INFORMASI",
+            type: "A",
+            link: "https://chat.whatsapp.com/FNaKteDQeYC29bxEZ72fus",
+          },
+
+          {
+            title: "SISTEM INFORMASI",
+            type: "B",
+            link: "https://chat.whatsapp.com/BrY3Tq8M2WtLTtHFt1MZJs",
+          },
+
+          {
+            title: "SISTEM INFORMASI",
+            type: "C",
+            link: "https://chat.whatsapp.com/BED9hUvl6v1LtcHbZRmbW9",
+          },
+
+          {
+            title: "SISTEM INFORMASI",
+            type: "D",
+            link: "https://chat.whatsapp.com/LvoL9rgn1YVGOUexhD90yS",
+          },
+
+          {
+            title: "SISTEM INFORMASI",
+            type: "E",
+            link: "https://chat.whatsapp.com/Ix9fno21ggD2CAFtEHv73n",
+          },
+
+          {
+            title: "SISTEM INFORMASI",
+            type: "F",
+            link: "https://chat.whatsapp.com/DznNNn2bAUZ7YCSkU1V6Ij",
+          },
+        ],
+        [
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "A",
+            link: "https://chat.whatsapp.com/GBriBqMudv69BlXsMQvppz",
+          },
+
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "B",
+            link: "https://chat.whatsapp.com/Fj8HjNqov9v3y61i1I8Naa",
+          },
+
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "C",
+            link: "https://chat.whatsapp.com/KPWfBYYcGF5Ff7RiARQ7Ny",
+          },
+
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "D",
+            link: "https://chat.whatsapp.com/CVKnE9dkDiIIr5z26oJsjS",
+          },
+
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "E",
+            link: "https://chat.whatsapp.com/Dnk2bNdzVOLG0RjbT19SFQ",
+          },
+
+          {
+            title: "PEMROGRAMAN MULTIMEDIA & GAME",
+            type: "F",
+            link: "https://chat.whatsapp.com/Ey4dYnuuD7bGqTIbFOixsT",
+          },
+        ],
+      ];
+
+      // Function to generate tables from data
+      function generateTables() {
+        const tablesContainer = document.getElementById("tables-container");
+
+        data.forEach((dataArray, index) => {
+          const tableDiv = document.createElement("div");
+          tableDiv.className = "card mt-4";
+          tableDiv.innerHTML = `
+          <div class="card-header pb-0 p-3">
+            <div class="d-flex justify-content-center">
+              <h6 class="mb-2 fs-5">${dataArray[0].title}</h6>
+            </div>
+          </div>
+          <div class="table-responsive p-3">
+            <table class="table align-items-center mb-0">
+              <thead>
+                <tr>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Title</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Type</th>
+                  <th class="text-uppercase text-secondary text-xxs font-weight-bolder">Action</th>
+                </tr>
+              </thead>
+              <tbody class="">
+                ${generateTableRows(dataArray)}
+              </tbody>
+            </table>
+          </div>
+        `;
+
+          tablesContainer.appendChild(tableDiv);
+        });
+      }
+
+      // Function to generate table rows from data array
+      function generateTableRows(dataArray) {
+        return dataArray
+          .map(
+            (dataItem) => `
+        <tr>
+          <td>
+            <p class="text-xs font-weight-bold mb-0">${dataItem.title}</p>
+          </td>
+          <td>
+            <p class="text-xs font-weight-bold mb-0">${dataItem.type}</p>
+          </td>
+          <td class="align-middle text-center w-10">
+            <a href="${dataItem.link}" target="_blank" class="btn btn-dark btn-sm w-100 mb-3">Join</a>
+          </td>
+        </tr>
+      `
+          )
+          .join("");
+      }
+
+      // Call the function to generate tables
+      generateTables();
+    </script>
+  </body>
+</html>
